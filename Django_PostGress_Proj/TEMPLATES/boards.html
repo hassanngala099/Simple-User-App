@@ -1,0 +1,19 @@
+
+
+<table>
+	<tr>
+		<th>No.</th>
+		<th>Name</th>
+		<th>Description</th>
+	</tr>
+	
+	<tr>    
+		{% for i in k %}
+		    <td>{{ i.id }}</td>
+			<td>{{ i.name }}</td>
+			<td>{{ i.description }}</td>
+	</tr>
+		{% endfor %}
+
+
+</table>
