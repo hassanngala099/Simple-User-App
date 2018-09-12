@@ -39,7 +39,7 @@ def login_form_table(request):# we expect to receive variables entered in the fo
 	return render(request,'form_data.html',{"name":name,"email":email,"phone":phone,"message":message}) 
 
 
-def SignupForm_Example(request):
+def SignupForm_Example_f(request):
 	if request.method == 'POST':
 		form = SignupForm_Example(request.POST or None)
 		if form.is_valid():

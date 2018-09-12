@@ -11,7 +11,7 @@ urlpatterns = [
     path('topics_table/',views.topics_table,name='topics_table'),
     path('fetchdata_form/',views.fetchdataform_table,name='fetchdata_form'),
     path('login_form/',views.login_form_table,name='login_form'),
-    path('SignupForm_Example/',views.SignupForm_Example,name='SignupForm_Example'),
+    path('SignupForm_Example/',views.SignupForm_Example_f,name='SignupForm_Example'),
 
 
 
