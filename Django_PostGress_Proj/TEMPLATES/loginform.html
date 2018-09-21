@@ -1,4 +1,10 @@
-<a href="{% url 'hello'%}"><i> hello</i> </a>&emsp
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<a href="{% url 'hello'%}"><i> hello</i> </a>&emsp
 <a href="{% url 'liveops'%}"><i> live  Operations </i></a>&emsp
 <a href="{% url 'posts_table'%}"> <i> All Posts </i> </a>&emsp
 <a href="{% url 'boards_table'%}">   <i> All Boards </i>&emsp
@@ -9,4 +15,10 @@
 <a href="{% url 'logout'%}"> <i> log Out</i></a>&emsp
 <a href="{% url 'loginform'%}"> <i> Log in </i></a>&emsp
 
-{{data_posts}}
+	<form method='POST'>
+	{%csrf_token%}
+	{{form.as_p}}	
+	<input type="submit" name="submit_button">
+</form>
+</body>
+</html>

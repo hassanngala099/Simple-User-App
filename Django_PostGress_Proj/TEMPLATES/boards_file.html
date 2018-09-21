@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<table>
+	<thead> 
+		<tr>
+		<th >name</th>
+		<!--<th> description</th>-->
+		</tr>
+	</thead>
+
+{%for b in boards%}
+	<tr>
+		<td><a href=" {% url 'board' b.pk %}">{{ b.name }} </a></td>
+		<!--<td>{{b.description}}</td>-->
+	</tr>
+	{%endfor %}
+</table>
+<!--{{ boards }}-->
+</body>
+</html>
